@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite A]">
+  <test name="Login Test(failed)">
+    <classes>
+      <class name="HybridFramework.suitea.TestB">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suitea.TestB -->
+      <class name="HybridFramework.suitea.LoginTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="loginTest" invocation-numbers="0 1 2"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suitea.LoginTest -->
+      <class name="HybridFramework.suitea.Jobserve">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suitea.Jobserve -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test name="Test B(failed)">
+    <classes>
+      <class name="HybridFramework.suitea.TestB">
+        <methods>
+          <include name="initTest"/>
+          <include name="testB" invocation-numbers="0 1"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suitea.TestB -->
+      <class name="HybridFramework.suitea.LoginTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suitea.LoginTest -->
+      <class name="HybridFramework.suitea.Jobserve">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suitea.Jobserve -->
+    </classes>
+  </test> <!-- Test B(failed) -->
+</suite> <!-- Failed suite [Suite A] -->

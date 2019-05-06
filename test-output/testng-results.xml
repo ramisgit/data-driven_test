@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="770" started-at="2019-05-06T22:40:21Z" finished-at="2019-05-06T22:40:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="770" started-at="2019-05-06T22:40:21Z" finished-at="2019-05-06T22:40:21Z">
+      <class name="HybridFramework.suites.Jobserve">
+        <test-method status="PASS" signature="init()[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="init" is-config="true" duration-ms="405" started-at="2019-05-06T23:40:21Z" finished-at="2019-05-06T23:40:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="initTest" is-config="true" duration-ms="135" started-at="2019-05-06T23:40:21Z" finished-at="2019-05-06T23:40:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="SKIP" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="JobserveTest" duration-ms="9" started-at="2019-05-06T23:40:21Z" data-provider="getData" finished-at="2019-05-06T23:40:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode is set to: N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.Jobserve.JobserveTest(Jobserve.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JobserveTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="quit" is-config="true" duration-ms="204" started-at="2019-05-06T23:40:21Z" finished-at="2019-05-06T23:40:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- HybridFramework.suites.Jobserve -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
