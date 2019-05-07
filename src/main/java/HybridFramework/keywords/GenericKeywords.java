@@ -64,8 +64,8 @@ public class GenericKeywords {
 		
 	}
 	public void navigate() {
-		test.log(Status.INFO, "Navigating to website " + envProp.getProperty(objectKey));
-		driver.get(envProp.getProperty(objectKey));
+		test.log(Status.INFO, "Navigating to website " + objectKey);
+		driver.get(objectKey);
 	}
 	public void click() {
 		test.log(Status.INFO, "Clicking " + prop.getProperty(objectKey));
@@ -109,25 +109,25 @@ public class GenericKeywords {
 		List<WebElement> options = new Select(getElement(objectKey)).getOptions();
 		for (int i = 0; i < options.size(); i++) {
 			//if (options.get(i).getText().equals(data.get(dataKey)))
-			if (options.get(i).getText().trim().equals(prop.getProperty(dataKey)))	
+			if (options.get(i).getText().trim().equals(dataKey))	
 				break;
 			if (i == options.size() - 1) {
-				reportFailure("Option not found in DropDown: " + prop.getProperty(dataKey));
+				reportFailure("Option not found in DropDown: " + dataKey);
 			}
 		}
-		new Select(getElement(objectKey)).selectByVisibleText(prop.getProperty(dataKey));
+		new Select(getElement(objectKey)).selectByVisibleText(dataKey);
 	}
 	public WebElement getElement(String objectKey) {
 		WebElement e = null;
 		try {
 			if (objectKey.endsWith("_id")){
-				e = driver.findElement(By.id(prop.getProperty(objectKey)));
+				e = driver.findElement(By.id(objectKey));
 			}else if (objectKey.endsWith("_name")){
-				e = driver.findElement(By.name(prop.getProperty(objectKey)));
+				e = driver.findElement(By.name(objectKey));
 			}else if (objectKey.endsWith("_xpath")){
-				e = driver.findElement(By.xpath(prop.getProperty(objectKey)));
+				e = driver.findElement(By.xpath(objectKey));
 			}else if (objectKey.endsWith("_css")) {
-				e = driver.findElement(By.cssSelector(prop.getProperty(objectKey)));
+				e = driver.findElement(By.cssSelector(objectKey));
 			}else {
 				Assert.fail("Locator not correct - " + objectKey);
 			}
@@ -166,13 +166,13 @@ public class GenericKeywords {
 	public boolean isElementPresent(String objectKey) {
 		List<WebElement> list = null;
 		if (objectKey.endsWith("_id")){
-			list = driver.findElements(By.id(prop.getProperty(objectKey)));
+			list = driver.findElements(By.id(objectKey));
 		}else if (objectKey.endsWith("_name")){
-			list = driver.findElements(By.name(prop.getProperty(objectKey)));
+			list = driver.findElements(By.name(objectKey));
 		}else if (objectKey.endsWith("_xpath")){
-			list = driver.findElements(By.xpath(prop.getProperty(objectKey)));
+			list = driver.findElements(By.xpath(objectKey));
 		}else if (objectKey.endsWith("_css")) {
-			list = driver.findElements(By.cssSelector(prop.getProperty(objectKey)));
+			list = driver.findElements(By.cssSelector((objectKey)));
 		}
 		if (list.size() == 0) return false;
 		else return true;

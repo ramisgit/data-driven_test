@@ -2,20 +2,20 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="770" started-at="2019-05-06T22:40:21Z" finished-at="2019-05-06T22:40:21Z">
+  <suite name="Default suite" duration-ms="1592" started-at="2019-05-07T19:21:18Z" finished-at="2019-05-07T19:21:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="770" started-at="2019-05-06T22:40:21Z" finished-at="2019-05-06T22:40:21Z">
+    <test name="Default test" duration-ms="1592" started-at="2019-05-07T19:21:18Z" finished-at="2019-05-07T19:21:20Z">
       <class name="HybridFramework.suites.Jobserve">
-        <test-method status="PASS" signature="init()[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="init" is-config="true" duration-ms="405" started-at="2019-05-06T23:40:21Z" finished-at="2019-05-06T23:40:21Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="init" is-config="true" duration-ms="1009" started-at="2019-05-07T20:21:18Z" finished-at="2019-05-07T20:21:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="initTest" is-config="true" duration-ms="135" started-at="2019-05-06T23:40:21Z" finished-at="2019-05-06T23:40:21Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="initTest" is-config="true" duration-ms="174" started-at="2019-05-07T20:21:19Z" finished-at="2019-05-07T20:21:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="SKIP" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="JobserveTest" duration-ms="9" started-at="2019-05-06T23:40:21Z" data-provider="getData" finished-at="2019-05-06T23:40:21Z">
+        <test-method status="SKIP" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="JobserveTest" duration-ms="12" started-at="2019-05-07T20:21:20Z" data-provider="getData" finished-at="2019-05-07T20:21:20Z">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JobserveTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="quit" is-config="true" duration-ms="204" started-at="2019-05-06T23:40:21Z" finished-at="2019-05-06T23:40:21Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:HybridFramework.suites.Jobserve@4883b407]" name="quit" is-config="true" duration-ms="363" started-at="2019-05-07T20:21:20Z" finished-at="2019-05-07T20:21:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
