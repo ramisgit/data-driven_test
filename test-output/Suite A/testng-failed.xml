@@ -3,54 +3,80 @@
 <suite name="Failed suite [Suite A]">
   <test name="Login Test(failed)">
     <classes>
-      <class name="HybridFramework.suitea.TestB">
+      <class name="HybridFramework.suites.LoginTest">
         <methods>
           <include name="initTest"/>
           <include name="init"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- HybridFramework.suitea.TestB -->
-      <class name="HybridFramework.suitea.LoginTest">
-        <methods>
-          <include name="initTest"/>
           <include name="loginTest" invocation-numbers="0 1 2"/>
-          <include name="init"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- HybridFramework.suitea.LoginTest -->
-      <class name="HybridFramework.suitea.Jobserve">
+      </class> <!-- HybridFramework.suites.LoginTest -->
+      <class name="HybridFramework.suites.TestB">
         <methods>
           <include name="initTest"/>
           <include name="init"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- HybridFramework.suitea.Jobserve -->
+      </class> <!-- HybridFramework.suites.TestB -->
+      <class name="HybridFramework.suites.Jobserve">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suites.Jobserve -->
     </classes>
   </test> <!-- Login Test(failed) -->
-  <test name="Test B(failed)">
+  <test name="TestB(failed)">
     <classes>
-      <class name="HybridFramework.suitea.TestB">
-        <methods>
-          <include name="initTest"/>
-          <include name="testB" invocation-numbers="0 1"/>
-          <include name="init"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- HybridFramework.suitea.TestB -->
-      <class name="HybridFramework.suitea.LoginTest">
+      <class name="HybridFramework.suites.LoginTest">
         <methods>
           <include name="initTest"/>
           <include name="init"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- HybridFramework.suitea.LoginTest -->
-      <class name="HybridFramework.suitea.Jobserve">
+      </class> <!-- HybridFramework.suites.LoginTest -->
+      <class name="HybridFramework.suites.TestB">
+        <methods>
+          <include name="initTest"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suites.TestB -->
+      <class name="HybridFramework.suites.Jobserve">
         <methods>
           <include name="initTest"/>
           <include name="init"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- HybridFramework.suitea.Jobserve -->
+      </class> <!-- HybridFramework.suites.Jobserve -->
     </classes>
-  </test> <!-- Test B(failed) -->
+  </test> <!-- TestB(failed) -->
+  <test name="Jobserve(failed)">
+    <classes>
+      <class name="HybridFramework.suites.LoginTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suites.LoginTest -->
+      <class name="HybridFramework.suites.TestB">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suites.TestB -->
+      <class name="HybridFramework.suites.Jobserve">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="JobserveTest" invocation-numbers="0"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suites.Jobserve -->
+    </classes>
+  </test> <!-- Jobserve(failed) -->
 </suite> <!-- Failed suite [Suite A] -->

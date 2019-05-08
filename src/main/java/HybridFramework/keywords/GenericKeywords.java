@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -45,10 +46,12 @@ public class GenericKeywords {
 	public SoftAssert softAssert = new SoftAssert();
 	
 	public void openBrowser() {
-		String bType = data.get(dataKey);
+		String bType = dataKey;
+		System.out.println(dataKey);
 		test.log(Status.INFO, "Opening browser " + bType);
 		if (bType.equals("Mozilla")) {
 			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "null");
+			System.out.println(System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
 			//invoke profile
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
@@ -59,6 +62,9 @@ public class GenericKeywords {
 			driver = new InternetExplorerDriver();
 		}else if (bType.equals("Edge")) {
 			driver = new EdgeDriver();
+		} else {
+			System.out.println("Unable to open browser");
+			System.exit(0);
 		}
 		driver.manage().window().maximize();
 		
@@ -68,13 +74,13 @@ public class GenericKeywords {
 		driver.get(objectKey);
 	}
 	public void click() {
-		test.log(Status.INFO, "Clicking " + prop.getProperty(objectKey));
+		test.log(Status.INFO, "Clicking " + objectKey);
 		getElement(objectKey).click();
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
 	public void type() {
-		test.log(Status.INFO, "Typing in " + prop.getProperty(objectKey) + " . Data - " + prop.getProperty(dataKey));
-		getElement(objectKey).sendKeys(prop.getProperty(dataKey));
+		test.log(Status.INFO, "Typing in " + objectKey + " . Data - " + dataKey);
+		getElement(objectKey).sendKeys(dataKey);
 	}
 	public void validateTitle() {
 		test.log(Status.INFO, "Validating title - " + prop.getProperty(objectKey));
@@ -120,17 +126,7 @@ public class GenericKeywords {
 	public WebElement getElement(String objectKey) {
 		WebElement e = null;
 		try {
-			if (objectKey.endsWith("_id")){
-				e = driver.findElement(By.id(objectKey));
-			}else if (objectKey.endsWith("_name")){
-				e = driver.findElement(By.name(objectKey));
-			}else if (objectKey.endsWith("_xpath")){
-				e = driver.findElement(By.xpath(objectKey));
-			}else if (objectKey.endsWith("_css")) {
-				e = driver.findElement(By.cssSelector(objectKey));
-			}else {
-				Assert.fail("Locator not correct - " + objectKey);
-			}
+			e = driver.findElement(By.xpath(objectKey));
 			WebDriverWait wait = new WebDriverWait(driver, 20);
 			wait.until(ExpectedConditions.visibilityOf(e));
 		}catch(Exception ex) {
@@ -162,6 +158,14 @@ public class GenericKeywords {
 	}
 	public void setProceedOnFail(String proceedOnFail) {
 		this.proceedOnFail = proceedOnFail;
+	}
+	public boolean pressEnter() {
+		getElement(objectKey).sendKeys(Keys.ENTER);
+		
+		
+		
+		return true;
+		
 	}
 	public boolean isElementPresent(String objectKey) {
 		List<WebElement> list = null;

@@ -1,22 +1,22 @@
 <suite name="Suite A">
 	<test name = "Login Test" allow-return-values="true">
 		<classes>
-			<class name="HybridFramework.suitea.LoginTest"/>
+			<class name="HybridFramework.suites.LoginTest"/>
 		</classes>
 	</test>
-	<test name = "Test B" allow-return-values="true">
+	<test name = "TestB" allow-return-values="true">
 		<classes>
-			<class name="HybridFramework.suitea.TestB"/>
+			<class name="HybridFramework.suites.TestB"/>
 		</classes>
 	</test>
 	<test name = "Jobserve" allow-return-values="true">
 		<classes>
-			<class name="HybridFramework.suitea.Jobserve"/>
+			<class name="HybridFramework.suites.Jobserve"/>
 		</classes>
 	</test>
-	<test name = "JobserveEmail" allow-return-values="true">
+	<!-- <test name = "JobserveEmail" allow-return-values="true">
 		<classes>
-			<class name="HybridFramework.suitea.JobserveEmailData"/>
+			<class name="HybridFramework.suites.JobserveEmailData"/>
 		</classes>
-	</test>
+	</test> -->
 </suite>

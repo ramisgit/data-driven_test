@@ -1,0 +1,1037 @@
+<html>
+<head>
+<title>TestNG:  JobserveEmail</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>JobserveEmail</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/20</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 08 01:08:40 BST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (900 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2hKI, jobDuration=3 months, jobStartDate=ASAP, Runmode=N, jobserveAgency=Oscar Associates Ltd, jobserveContact=Shary Malik , jobserveJobEmail=, jobserveSalary=£350 - £400 per Day + competitive, jobTitle=Tester in Charge (TIC) - Cisco, jobLocation=Doncaster, UK, jobservePostDate=22/03/2019 15:16:26, jobBody=Tester in Charge (TIC), 3 months Contract, Doncaster, Immediate Start
+Networking | CCNA | Network Security | Checkpoint | Cisco | TIC
+Job Details
+Looking for a candidate who is a Tester in Charge (TIC) with Cisco experience (preferably with Cisco Certification but is not a must) but more important is to have this experience with Network Rail - this is a MUST.
+We are looking for an engineer for the role of "Tester In Charge" for a Telecom scope of the project with Network Rail which involves Cisco network equipment and Fibre Optic scope.
+Duration: 3 months (projected to go on for a lot longer 9-12 months at least)
+Start Date: Immediate
+Interviews: This Week
+Rate: £350-£400/day
+Location: Doncaster (May have some potential of remote work)
+Please send across your latest CV and/or call me.
+Drop me a message if interested or anyone you would like to recommend. We do offer a generous reward scheme of £500 in vouchers.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1630841930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1630841930'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2Hpw, jobDuration=, jobStartDate=, Runmode=N, jobserveAgency=Xcede, jobserveContact=Nathan Abery , jobserveJobEmail=Nathan.Abery.8F3EC.C5DDA@apps.jobserve.com, jobserveSalary=Up to £250.00 per Day, jobTitle=Tester, jobLocation=City of London, UK, jobservePostDate=19/03/2019 10:19:59, jobBody=Role: Tester
+Contract: 2 Month Initial
+Rate: £250 Per Day
+Location: Central London
+
+Working with a very well-known broadcaster I'm looking for an Automation Tester to work on their very popular On Demand service over the next few months.
+
+If you have experience working on Video/UI/Mobile Testing - then please email me your CV directly - (see below)
+
+This is an initial 2 month engagement with the highly likelihood of extension - QUICK TURNAROUND.
+
+*Manual UAT and Regression - following existing regression test packs and test cases
+*Reporting defects in JIRA
+*Producing Test Exit reports - following existing template
+*Experience using JIRA
+*Experience using Charles/Fiddler/Wireshark
+*Experience with Video on Demand applications is highly desirable, but we could consider candidates without this if they are strong in other areas
+
+If you're interested in this positon please reply with an updated CV.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10915321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10915321'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2YoI, jobDuration=6 months, jobStartDate=ASAP, Runmode=N, jobserveAgency=Access Computer Consulting Plc, jobserveContact=Lisa Christopherson , jobserveJobEmail=, jobserveSalary=£200-£250 Per Day, jobTitle=Tester, jobLocation=Rickmansworth, Hertfordshire, UK, jobservePostDate=21/03/2019 10:27:14, jobBody=I am recruiting for a Tester to be based in Rickmansworth, Hertfordshire.
+Candidates must have worked in the Finance/Banking sector.
+You must be an experienced in Functional & Non Functional Tester.
+Good SQL skills are essential.
+You will have worked on High Volume Backend systems.
+You must be able to proactively and efficiently create test cases, execute, automate and communicate functional testing.
+SoapUI Pro & Selenium are also essential.
+Creation & execution of Automation test scripts is also required for this role.
+Please apply ASAP to discuss further.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace346377974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace346377974'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2gYI, jobDuration=, jobStartDate=ASAP, Runmode=N, jobserveAgency=IntecSelect, jobserveContact=Alfie Elliott, jobserveJobEmail=, jobserveSalary=£500 - 600 per Day, jobTitle=Automation Tester, jobLocation=London, UK, jobservePostDate=22/03/2019 09:39:21, jobBody=Automation Tester - Commodities - Contract - (£500 - £600 Per Day)
+
+Overview:
+Our client, a leading global FTSE 100 commodities business are looking for an Automation Tester to join their long term program of work.
+
+Responsibilities:
+The QA engineer responsibilities will include but are not limited to the following:
+Review requirements, specifications and technical design documents to provide timely and meaningful feedback
+Create detailed, comprehensive and well-structured test plans and test cases.
+Estimate, prioritize, plan and coordinate testing activities
+Design, develop and execute automation scripts designed at web service layer or Front End using open source tools. (Selenium, Specflow or similar tools.)
+Identify, record, document thoroughly and track bugs (VS Online/TFS)
+Perform thorough regression testing when bugs are resolved. Manual testing is going to remain a big portion of the responsibilities of this role.
+Liaise with internal teams (eg developers and product managers) to identify system requirements
+
+Requirements:}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1075082007", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1075082007'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2JtD, jobDuration=13 weeks, jobStartDate=29/03/2019, Runmode=N, jobserveAgency=Square One Resources, jobserveContact=Jordan O'Neill , jobserveJobEmail=, jobserveSalary=Up to £400 per Day, jobTitle=.NET TESTER, jobLocation=London, UK, jobservePostDate=19/03/2019 17:40:18, jobBody=Automation Tester with strong .NET and Selenium experience is required by a leading consultancy, on an initial 3 month contract based in the heart of London.
+
+Automation Tester - Key Responsibilities/Duties
+* Develop and maintain the automated test solution for the user interface (UI) using Selenium Webdriver with C#;
+* Provide web service testing using Postman
+* Effective use of continuous integration and build management tools such as TeamCity and Octopus Deploy
+* Cross-browser/device test automation using the cloud infrastructure service BrowserStack;
+
+Automation Tester - Key skills required
+* Automation Testing experience withing a .Net/C# environment
+* Worked within a digital transformation programme and will include, OLS (online statements), IAM (single sign-on), Website & others that occur
+* Selenium
+* Postman
+* TFS
+
+If you are interested in this opportunity, please apply now with your updated CV in word/PDF format.
+
+Notwithstanding any guidelines given to level of experience sought, we will consider candidates from outside this range if they can demonstrate the necessary competencies.
+
+Square One is acting as both an employment agency and an employment business, and is an equal opportunities recruitment business.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace485047320", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace485047320'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2JJD, jobDuration=3 months, jobStartDate=ASAP, Runmode=N, jobserveAgency=Spring Technology, jobserveContact=Sukhy Sehmi , jobserveJobEmail=, jobserveSalary=, jobTitle=Penetration Tester, jobLocation=London, UK, jobservePostDate=19/03/2019 16:05:54, jobBody=Penetration Tester
+3 months Initially
+Midlands or London
+
+This function will be responsible for collaborating closely with Software Engineering teams through application penetration testing and assisting remediation guidance activities to enable the UK Business.
+
+This position reports to the UK Head of Application Security and is to be located in Midlands or London with flexible working arrangements, although London located will be considered for the ideal candidate.
+
+Job Scope and Responsibilities:
+*Delivery of penetration testing/security assessments
+*Present findings, risks and conclusions to technical and non-technical audiences
+*Close collaboration with the business throughout remediation including influence stakeholders and delivery teams in prioritisation of security activities and issue remediation
+*Establish effective and productive relationships with colleagues across the Global Cyber organisation and technology departments as well as the UK business
+*Empower the delivery team's resources by promoting application security awareness and standards through training, mentoring and vulnerability demos
+*Establish credibility throughout the organisation by earning a reputation for being a proactive leader and positive disruptor
+
+Minimum Qualifications and Requirements:
+*Skilled at mentoring and communicating goals and corporate initiatives and driving to results
+*Extensive knowledge and experience in securing and developing web applications, APIs/web services and mobile apps
+*Strong knowledge of Web, API and mobile application security testing frameworks and methodologies
+*Extensive experience in penetration testing and/or application security engineering is a must
+*Strong knowledge of application security best practices including OWASP Top 10 and OWASP Mobile Top 10
+*Technical knowledge in software engineering, system and network security, authentication and security protocols, cryptography, and network/web related protocols (eg, TCP, UDP, HTTP, HTTPS)
+*Technical knowledge of cloud hosting and penetration testing techniques of cloud based applications
+*Familiarity with penetration testing tools such as BurpSuite, OWASP Zap, SoapUI etc.
+*Certifications such as Crest, Tiger, OSCP, OSCE, CHECK
+*Scripting and development experience is highly desirable
+*Experience with static analysis, security code review, security automation and security training is desirable
+*Flexible, business focused approach to testing delivery is essential
+*Familiarity with AWS is desirable
+*Ability to travel as needed
+
+Spring acts as an employment agency for permanent recruitment and an employment business for the supply of temporary workers. The Spring Group UK is an Equal Opportunities Employer.
+
+By applying for this role your details will be submitted to Spring. Our Candidate Privacy Information Statement explains how we will use your information.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace687892306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace687892306'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2KHg, jobDuration=6 months, jobStartDate=ASAP, Runmode=N, jobserveAgency=Resource Solutions - Method Resourcing, jobserveContact=Tom Hurley, jobserveJobEmail=, jobserveSalary=£400 - £451 per Day, jobTitle=Automation Tester - SDET - Javascript - London, jobLocation=London, UK, jobservePostDate=19/03/2019 18:30:44, jobBody=Automation Tester - SDET - JavaScript - London - 6 Month Contract
+I am working for a well know retail client that are looking for an SDET on an initial 3-6 month contract.
+You must have proven experience in building automation frameworks from scratch, have a strong background in Java/JavaScript and excellent communication skills.
+For more information please send me your CV in the first instance.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace289711450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace289711450'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2H3C, jobDuration=12 months, jobStartDate=ASAP, Runmode=N, jobserveAgency=Wunderman Thompson Commerce, jobserveContact=Michelle Guillena , jobserveJobEmail=Michelle.Guillena.7B9C6.7A0C2@apps.jobserve.com, jobserveSalary=Market Rates, jobTitle=Manual Tester - Hybris - Unix, jobLocation=London, UK, jobservePostDate=19/03/2019 11:17:07, jobBody=Manual Tester - Hybris - Unix
+Manual Tester required and should possess strong analytical and problem-solving skills and have an eye for detail. We require a highly motivated individual with well-developed interpersonal skills. You will be part of a small team of testers, primarily focused on retail eCommerce sites. You will be involved in the preparation of test cases, test plans and will be required to execute tests both manually and where necessary using automated testing tools.
+The applicant will be system testing and integration testing on new projects and regression testing as part of on-going site support for a number of clients. Experience of testing RESTful services, querying databases and reviewing log file output is expected.
+You:
+Talented, enthusiastic, focused, eye for detail, professional. Keen to learn and find new ways of doing things. A team player who is proud of your work and wants to share with everyone! You like working in a fast paced environment and are driven by the desire to improve the online purchasing experience for everyone, no matter what they are buying and from where!
+You will be client focused and be willing to be flexible when required to make them happy, including working at client locations.
+The techy bit .we need you to be really great at:
+System Testing experience.
+Experience of using Hybris within previous projects
+Experience of testing transactional eCommerce websites, ideally retail based.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace358420513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace358420513'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2J43, jobDuration=, jobStartDate=, Runmode=N, jobserveAgency=Spring Technology, jobserveContact=Munraj Dhami , jobserveJobEmail=Munraj.Dhami.C45EB.5259D@apps.jobserve.com, jobserveSalary=£350.00 - £400.00 per Day, jobTitle=QA Tester, jobLocation=London, UK, jobservePostDate=19/03/2019 18:03:39, jobBody=Automation Tester/QA Analyst/Contract/3-6 months/£350-£400/London/Umbraco/SQL/Selenium
+
+The Client:
+The client is a well established organisation based in central London and is looking for an automated tester to join their team within the London office.
+
+The role:
+As an Automated Tester you will be assisting in creating an automated test platform. You will be working with the development team in assisting the rebuild of the client's website in an Opensorce CMS. You will also be working within an agile scrum environment.
+
+The requirements:
+*Experience with Umbraco
+*Knowledge of CMS applications such as Sitecore
+*Experience using Selenium
+*Previous experienced on Front End and Back End testing
+*Experience with .NET
+*Experienced in SQL script
+*Ability to execute performance testing scripts
+*Knowledge of Azure
+
+This is a 3 month contract with strong possibilities to extend. The role is based in London, with the daily rate paying up to £400 per day. If this sounds of interest or you have any questions please don't hesitate to email me (see below)
+
+Spring acts as an employment agency for permanent recruitment and an employment business for the supply of temporary workers. The Spring Group UK is an Equal Opportunities Employer.
+
+By applying for this role your details will be submitted to Spring. Our Candidate Privacy Information Statement explains how we will use your information}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1643299824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1643299824'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2gXk, jobDuration=6 months, jobStartDate=ASAP, Runmode=N, jobserveAgency=JNC Recruitment Ltd, jobserveContact=Alex Phillips , jobserveJobEmail=Alex.Phillips.13C87.47BCE@apps.jobserve.com, jobserveSalary=£350-£400 per Day, jobTitle=Manual Tester (Web and Mobile) - Contract - London - £350-£400 per day - 6 months, jobLocation=London, UK, jobservePostDate=22/03/2019 09:38:21, jobBody=Manual Tester (Web and Mobile) - Contract - London - £350-£400 per day - 6 months
+We are working with a leading global media company as they look for an established Manual Tester, with experience testing across web and mobile apps, to work on a new streaming project.
+They are an agile and collaborative environment, with a focus on meeting deadlines with the very best products they can build. With this, you'll be able to work fast and accurately with the ability to communicate any issues throughout the process quickly to get them resolved.
+Key skills required:
+Web and mobile apps testing (mostly manual)
+Cross Browser/OS & Android/iOS test experience
+Confident test management experience with tools including Jira
+Previous work in an Agile/Kanban environment
+API testing with tools like SoapUI, Postman etc
+Proxy tools including Charles, Wireshark
+Good understanding of VOD and OTT tech
+In line with the Conduct Regulations 2003, when advertising permanent vacancies JNC Recruitment are acting as an Employment Agency, and when advertising temporary/contract vacancies JNC Recruitment are acting as an Employment Business.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1887466020", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1887466020'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2SBW, jobDuration=6 months, jobStartDate=ASAP, Runmode=N, jobserveAgency=Square One Resources, jobserveContact=Andri Angantysson , jobserveJobEmail=, jobserveSalary=£300 - £330 per Day, jobTitle=Automation Tester, jobLocation=Essex, UK, jobservePostDate=20/03/2019 17:51:26, jobBody=Automation Tester
+6 months
+Essex
+ASAP Start
+
+Key Responsibilities/Duties
+1 - Import to understand how to automate tests in SoapUI/ReadyAPI
+
+Key skills required
+1 - Fair understanding of Groovy/SQL
+2 - Ability to use a CI tool to integrate SoapUI tests and run them on a scheduled basis
+3 - Strong understand of ServiceV within ReadyAPI - This is required to virtualize APIs, ie make the APIs dynamic with data-driven techniques.
+4 - Understanding of AWS console and working with cloud instances ie 'ssh' into an EC2/S3 bucket instance to perform required tasks
+5 - Shell Scripting skills ie knowing how to use curl, grep, chown, chmod, netstat, ps, scp etc
+3 - Selenium with Ruby automation
+
+If you are interested in this opportunity, please apply now with your updated CV in word/PDF format.
+
+Notwithstanding any guidelines given to level of experience sought, we will consider candidates from outside this range if they can demonstrate the necessary competencies.
+
+Square One is acting as both an employment agency and an employment business, and is an equal opportunities recruitment business. Square One embraces diversity and will treat everyone equally: Please see our website for our full diversity statement.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1299126654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1299126654'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2RnJ, jobDuration=3 months, jobStartDate=, Runmode=N, jobserveAgency=Gibbs Hybrid, jobserveContact=Slaine Kelly , jobserveJobEmail=, jobserveSalary=£400.00 - £450.00 per Day, jobTitle=Automaton Tester - Microservices experience needed, jobLocation=Manchester, UK, jobservePostDate=20/03/2019 16:09:59, jobBody=Automation Tester - Microservices experience needed
+Manchester
+3 months
+
+Our client is a global name in technology, currently supporting a public sector client based in Manchester.
+Essential skills:
+*Automation tesing background
+*API/micro-services/Back End testing
+*REST Assured
+*Java
+*Exerience working in Agile/Scrum teams
+
+If you are interested in this role please apply online to be considered - thank you.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1924802798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1924802798'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2C0N, jobDuration=, jobStartDate=, Runmode=N, jobserveAgency=Kieran Knight Consulting Ltd, jobserveContact=Kieran Paynter, jobserveJobEmail=Kieran.Paynter.7364D.48F0E@apps.jobserve.com, jobserveSalary=Up to 40K + Benefits, jobTitle=Software Tester - Manual - 12 month Fixed Term Contract - SOLE AGENT, jobLocation=Central London, UK, jobservePostDate=18/03/2019 17:19:53, jobBody=Software Tester - Manual - 12 month Fixed Term Contract - SOLE AGENT
+Our client, a renowned UK charity, require a talented Software Tester to join their team on a 12 month fixed term contract. You will ensure products meet the end user requirements and that all the deliverables are fit for purpose. Excellent communication skills are key as you will work closely with the business.
+Skills:
+A strong understanding of testing technologies from both a technical and business perspective, specifically writing Test Plans, Test specifications and Test Reports.
+Proven knowledge working with Business Systems especially CRM advantageous.
+Demonstrated pro-activity in capitalising on opportunities and resolving issues.
+Ability to provide system load assessments as part of testing phase.
+Understanding of current usability and accessibility best practice
+Experience in testing RESTFUL APIs.
+ISEB Foundation level or ISTQB-BCS Certified Tester or equivalent nice to have.
+Experience:
+Demonstrable experience of creating test plans and test strategies
+Experience in explaining systems to end-users on all levels
+Experience in working in a project managed environment (Prince 2)
+Experience in maintaining and sustaining diverse relationships}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1260127127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1260127127'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2Cxf, jobDuration=6 months, jobStartDate=ASAP, Runmode=N, jobserveAgency=Experis IT, jobserveContact=Abigail Scott , jobserveJobEmail=, jobserveSalary=, jobTitle=Performance Tester, jobLocation=Basingstoke, UK, jobservePostDate=18/03/2019 17:05:08, jobBody=Performance Tester
+Basingstoke
+6 months
+Client Overview
+Fancy working with one of the UK's most digital organisations and leading the technology revolution across the public sector with over 50 million customers UK wide? You will act as a Performance Tester to provide specialist testing advice and delivery on application/infrastructure projects. My client are looking for an experienced Performance Tester to deliver and own Operability and Performance testing capabilities present on the project, across a range of technologies and operating systems.
+Role Responsibilites
+Supplies stakeholders with the data they require to be able to make informed decisions in respect to solution or component suitability to progress to the next development stage or for release into production.
+Contribute to test estimation when required.
+Organizes materials, environments, tools and resources required to deliver the planned testing activities and co-ordinates the delivery of testing against the schedule, reporting test progress, risks and test incidents and collecting test metrics.
+Involvement in the development of test plans and may lead a small test team.
+Perform testing development and execution activities that require specialist skills in testing toolsets.
+Creates test cases and identifies test data in response to clearly defined requirements.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace761680655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace761680655'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2hKx, jobDuration=6 months, jobStartDate=ASAP, Runmode=N, jobserveAgency=Access Computer Consulting Plc, jobserveContact=Cassie Axe , jobserveJobEmail=, jobserveSalary=£500 - £700 per Day, jobTitle=Penetration Tester - Home Based, jobLocation=West Midlands, UK, jobservePostDate=22/03/2019 15:17:37, jobBody=Penetration Tester - Remote - OUTSIDE IR35 - 6 months
+I am currently looking for a number of Penetration testers for 6-month assignments in the West Midlands, although the majority of the work will be home based. I am looking for people to join a growing Enterprise Cyber team, who have just won major investment and about to undertake some exciting new projects. You will be working on a broad range of high-assurance red team engagements and enterprise penetration tests. On a daily basis you will be involved in application and infrastructure testing, "Red Teaming", Advanced Intrusion Testing, and cyber and digital resilience.
+We have both client and non-client facing roles available and can even consider someone who is available on an AdHoc basis
+What you will need.
+Knowledge of performing Network/Wireless/Infrastructure and Web Application Penetration Testing
+Current Crest/Tiger Accreditation.
+CHECK status (CTM/CTL) is ideal but not essential - white labelling accepted.
+UK SC clearance ideal but not essential.
+Good communication skills.
+An innovative and analytical approach to performing penetration testingskills
+Flexibility to travel both within the UK
+If you interested in undertaking a new contract within an organisation who have the latest cutting-edge technology available and one where CapDev is encouraged, then please get in touch.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace271422148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace271422148'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2Hdd, jobDuration=3 months, jobStartDate=19/04/2019, Runmode=N, jobserveAgency=Progressive North, jobserveContact=Sean Sutton , jobserveJobEmail=, jobserveSalary=, jobTitle=Accessibility Tester, jobLocation=West Midlands, UK, jobservePostDate=19/03/2019 09:53:33, jobBody=Accessibility Tester, 3 Month Contract, West Midlands:
+My client is looking for an Accessibility Tester who either has current or would be able to achieve BPSS Security Clarence.
+They have given me the below specification.requirements:
+Experience of doing discovery phases related to accessibility testing for clients.
+Experience in recommending potential improvements for Accessibility Design Specifications
+Experience in Accessibility Testing processes and approach (including supporting test infrastructure and tooling)
+Understanding Accessibility Testing Standards - AAA, AA & A.
+Experience of leading Accessibility testing team and UAT team.
+Overall 3-4 years extensive experience of conducting Accessibility Testing.
+If you are interested, please apply with an updated CV.
+Progressive Recruitment, a trading division of SThree Partnership LLP is acting as an Employment Business in relation to this vacancy.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2004628751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2004628751'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2h4p, jobDuration=, jobStartDate=, Runmode=N, jobserveAgency=ARC IT Recruitment, jobserveContact=Marcus Freeman , jobserveJobEmail=, jobserveSalary=Competitive, jobTitle=Performance Tester, jobLocation=Crawley, West Sussex, UK, jobservePostDate=22/03/2019 16:54:19, jobBody=Performance Tester, Test Engineer, Automation Tester, Crawley
+
+Performance Tester, Test Engineer, Automation required by an innovative technology group to work on an initial 3-month contract with an immediate start. You'll be working on exciting projects within an expanding, successful organisation with a positive, vibrant atmosphere. This Performance Tester, Test Engineer, Automation Tester role will see you join a talented and experienced QA team to aid with ongoing support, enhancement and testing of various company products with a focus on performance testing.
+
+Requirements -
+Experienced working in an Agile environment
+Experience with one of the following performance testing tools - Jmeter, Selenium, HP LoadRunner, LoadUI, WebLOAD, NeoLoad, TestComplete or similar
+This Performance Tester, Test Engineer, QA Analyst is a fantastic opportunity for a talented professional to join a forward-thinking team at a really exciting time, with the company growth ongoing.
+To apply please send your CV to Marcus Freeman at Arc IT Recruitment.
+
+Test, QA, Analyst, Agile, Tester, Performance, Manual, Automated, Jmeter, Selenium, ISEB.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace722160979", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace722160979'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2gxr, jobDuration=6 months, jobStartDate=ASAP, Runmode=N, jobserveAgency=Square One Resources, jobserveContact=Joe Neal , jobserveJobEmail=, jobserveSalary=£400-£450/Day, jobTitle=Manual Tester, jobLocation=West London, UK, jobservePostDate=22/03/2019 11:43:49, jobBody=CONTRACT
+Mobile and Web Tester
+£400-450pd
+6 months
+West London
+Key Skills Required
+Manual test experience for web and mobile apps testing
+Hands on cross browser/OS test experience
+Hands on test preparation, test artefacts management in fast pace Agile environment
+Experience in running regression and smoke tests.
+Desirable/Beneficial skills
+Experience of API testing such as SOAP UI, POSTMAN
+Experience of using Proxy tools such as Charles, Wireshark etc.
+Understanding of VOD and OTT technologies.
+If you are interested in this opportunity, please apply now with your updated CV in word/PDF format.
+Notwithstanding any guidelines given to level of experience sought, we will consider candidates from outside this range if they can demonstrate the necessary competencies.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace663215704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace663215704'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2O04, jobDuration=3 months rolling, jobStartDate=ASAP, Runmode=N, jobserveAgency=K2 Partnering Solutions Ltd, jobserveContact=Krishna Mistry , jobserveJobEmail=Krishna.Mistry.BF7FC.CB642@apps.jobserve.com, jobserveSalary=circa £400/day +/-, jobTitle=.Net Automation Tester/Developer (SDET) - London - Circa £400/day +/-, jobLocation=London, UK, jobservePostDate=20/03/2019 08:15:37, jobBody=.Net Automation Tester/Developer (SDET) - London - 3 months rolling
+Our client is urgently seeking an Agile coach to start ASAP on a 3 month rolling contract in London based on the below specification:
+8+ years development experience in .Net/C# and Test Automation
+Expertise in designing Test automation frameworks using C# -Specflow
+Proficient in C#
+Experience in MVVM architecture
+Strong understanding of Object Oriented programming
+Skill in writing test scenarios in Gherkin language for Behaviour Driven Development projects
+Experience of implementing Automation Testing frameworks in .NET environment
+Experience with SCRUM/Agile methodologies
+Experience in handling REST API in .NET environment
+Proficient understanding of code versioning tools such as git.
+Experience in designing test cases from functional requirements
+Please apply directly for more details.}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace361903111", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace361903111'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+<tr>
+<td title='HybridFramework.suites.JobserveEmailData.loginTest()'><b>loginTest</b><br>Test class: HybridFramework.suites.JobserveEmailData<br>Parameters: {jobserveJobLink=http://www.jobserve.com/G2PbD, jobDuration=6-12 months, jobStartDate=ASAP, Runmode=N, jobserveAgency=Oliver Bernard, jobserveContact=Ashley Palmer , jobserveJobEmail=, jobserveSalary=£500 - £600 per Day, jobTitle=Senior Performance Tester - Jmeter/Gatling/Loadrunner, jobLocation=London, UK, jobservePostDate=20/03/2019 10:06:25, jobBody=Senior Performance Tester - Jmeter/Gatling/Loadrunner
+
+Senior Performance Tester - ! One of Europe's leading Retail Banks company require a smart & enthusiastic Perfeormance Engineer to join their dedicated Quality Assurance team, where you will manage and deliver performance testing services.
+EXPERIENCE, KNOWLEDGE & QUALIFICATIONS:
+Passionate about performance
+You are the best performance test specialist you know
+Able to understand the difference between client side and Server Side performance
+Previous experience delivering performance test solutions with tools such as LoadRunner, JMeter or Gatling
+Able to pick up new tools and techniques quickly
+Source control your test assets
+Confident & proud of the scripts you write
+You don't just send the report generated by your performance test tool
+You don't just record and replay
+Ability to write a fantastic document without a template
+Location: London
+Rate: £500-£600 p/day
+6-12 Months}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace147089688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace147089688'><pre>org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.JobserveEmailData.loginTest(JobserveEmailData.java:23)
+	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+</pre></div></td>
+<td>0</td>
+<td>HybridFramework.suites.JobserveEmailData@6e171cd7</td></tr>
+</table><p>
+</body>
+</html>
