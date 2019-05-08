@@ -75,7 +75,7 @@
     <!-- run -->
     <target name="run" depends="compile">
         <testng classpath="${test.classpath}:${test.dest}" suitename="suite1">	
-            <xmlfileset dir="${ws.home}" includes="src/test/resources/testng.xml"/>
+            <xmlfileset dir="${ws.home}/src/test/resources" includes="testng.xml"/>
         </testng>
         <!--
         <testng classpath="${test.classpath}:${test.dest}" groups="fast">

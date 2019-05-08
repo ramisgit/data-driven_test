@@ -11,13 +11,6 @@
           <include name="quit"/>
         </methods>
       </class> <!-- HybridFramework.suites.LoginTest -->
-      <class name="HybridFramework.suites.TestB">
-        <methods>
-          <include name="initTest"/>
-          <include name="init"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- HybridFramework.suites.TestB -->
       <class name="HybridFramework.suites.Jobserve">
         <methods>
           <include name="initTest"/>
@@ -25,34 +18,15 @@
           <include name="quit"/>
         </methods>
       </class> <!-- HybridFramework.suites.Jobserve -->
+      <class name="HybridFramework.suites.TestB">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suites.TestB -->
     </classes>
   </test> <!-- Login Test(failed) -->
-  <test name="TestB(failed)">
-    <classes>
-      <class name="HybridFramework.suites.LoginTest">
-        <methods>
-          <include name="initTest"/>
-          <include name="init"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- HybridFramework.suites.LoginTest -->
-      <class name="HybridFramework.suites.TestB">
-        <methods>
-          <include name="initTest"/>
-          <include name="testB" invocation-numbers="0"/>
-          <include name="init"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- HybridFramework.suites.TestB -->
-      <class name="HybridFramework.suites.Jobserve">
-        <methods>
-          <include name="initTest"/>
-          <include name="init"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- HybridFramework.suites.Jobserve -->
-    </classes>
-  </test> <!-- TestB(failed) -->
   <test name="Jobserve(failed)">
     <classes>
       <class name="HybridFramework.suites.LoginTest">
@@ -62,13 +36,6 @@
           <include name="quit"/>
         </methods>
       </class> <!-- HybridFramework.suites.LoginTest -->
-      <class name="HybridFramework.suites.TestB">
-        <methods>
-          <include name="initTest"/>
-          <include name="init"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- HybridFramework.suites.TestB -->
       <class name="HybridFramework.suites.Jobserve">
         <methods>
           <include name="initTest"/>
@@ -77,6 +44,13 @@
           <include name="quit"/>
         </methods>
       </class> <!-- HybridFramework.suites.Jobserve -->
+      <class name="HybridFramework.suites.TestB">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- HybridFramework.suites.TestB -->
     </classes>
   </test> <!-- Jobserve(failed) -->
 </suite> <!-- Failed suite [Suite A] -->

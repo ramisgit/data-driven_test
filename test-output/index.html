@@ -23,21 +23,21 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">2 suites, 1 failed test</span>
+      <span class="top-banner-font-1">2 suites</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite_A" class="navigator-link">
-              <span class="suite-name border-failed">Suite A</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite_A">
+              <span class="suite-name border-skipped">Suite A</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite_A" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite_A">
                     <span>C:\Users\Ramis\git\data-driven_test\src\test\resources\suites.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite_A" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite_A">
                     <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite_A" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Suite_A">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite_A" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Suite_A">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite_A" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite_A">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite_A" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite_A">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite_A" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite_A">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,  4 skipped,  </span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite_A" class="hide-methods failed suite-Suite_A"> (hide)</a> <!-- hide-methods failed suite-Suite_A -->
-                      <a href="#" panel-name="suite-Suite_A" class="show-methods failed suite-Suite_A"> (show)</a> <!-- show-methods failed suite-Suite_A -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite_A">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_A" title="HybridFramework.suites.TestB" class="method navigator-link" hash-for-method="testB({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla})">testB({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite_A -->
+                    <span class="method-stats">5 methods,  4 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -114,26 +100,40 @@
                     </span>
                     <div class="method-list-content skipped suite-Suite_A">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_A" title="HybridFramework.suites.Jobserve" class="method navigator-link" hash-for-method="JobserveTest({Username=example@mail.com, Runmode=N, Browser=Chrome})">JobserveTest({Username=example@mail.com, Runmode=N, Browser=Chrome})</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="HybridFramework.suites.Jobserve" hash-for-method="JobserveTest({Username=example@mail.com, Runmode=N, Browser=Chrome})">JobserveTest({Username=example@mail.com, Runmode=N, Browser=Chrome})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_A" title="HybridFramework.suites.LoginTest" class="method navigator-link" hash-for-method="loginTest({Username=U3, ExpectedResult=LoginFailure, Password=P3, Runmode=N, Browser=Edge})">loginTest({Username=U3, ExpectedResult=LoginFailure, Password=P3, Runmode=N, Browser=Edge})</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="HybridFramework.suites.LoginTest" hash-for-method="loginTest({Username=U3, ExpectedResult=LoginFailure, Password=P3, Runmode=N, Browser=Edge})">loginTest({Username=U3, ExpectedResult=LoginFailure, Password=P3, Runmode=N, Browser=Edge})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_A" title="HybridFramework.suites.LoginTest" class="method navigator-link" hash-for-method="loginTest({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome...)">loginTest({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="HybridFramework.suites.LoginTest" hash-for-method="loginTest({Username=example@mail.com, ExpectedResult=LoginSuccess, Password=Pass123, Runmode=N, Browser=Mozill...)">loginTest({Username=example@mail.com, ExpectedResult=LoginSuccess, Password=Pass123, Runmode=N, Browser=Mozill...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_A" title="HybridFramework.suites.LoginTest" class="method navigator-link" hash-for-method="loginTest({Username=example@mail.com, ExpectedResult=LoginSuccess, Password=Pass123, Runmode=N, Browser=Mozill...)">loginTest({Username=example@mail.com, ExpectedResult=LoginSuccess, Password=Pass123, Runmode=N, Browser=Mozill...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="HybridFramework.suites.LoginTest" hash-for-method="loginTest({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome...)">loginTest({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite_A -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite_A" class="hide-methods passed suite-Suite_A"> (hide)</a> <!-- hide-methods passed suite-Suite_A -->
+                      <a href="#" panel-name="suite-Suite_A" class="show-methods passed suite-Suite_A"> (show)</a> <!-- show-methods passed suite-Suite_A -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite_A">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_A" title="HybridFramework.suites.TestB" hash-for-method="testB({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla})">testB({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite_A -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -145,45 +145,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite_A" class="panel Suite_A">
-          <div class="suite-Suite_A-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">HybridFramework.suites.TestB</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testB({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla})">
-                  </a> <!-- testB({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla}) -->
-                  <span class="method-name">testB</span>
-                  <span class="parameters">({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla})</span>
-                  <div class="stack-trace">java.lang.reflect.InvocationTargetException
-	at HybridFramework.drivers.DriverScript.executeKeywords(DriverScript.java:54)
-	at HybridFramework.suites.TestB.testB(TestB.java:25)
-Caused by: java.lang.NoClassDefFoundError: kotlin/TypeCastException
-	at okhttp3.ResponseBody.create(ResponseBody.java:209)
-	at okhttp3.internal.Util.&lt;clinit&gt;(Util.java:51)
-	at okhttp3.ConnectionPool.&lt;clinit&gt;(ConnectionPool.java:52)
-	at org.openqa.selenium.remote.internal.OkHttpClient$Factory.&lt;init&gt;(OkHttpClient.java:118)
-	at org.openqa.selenium.remote.internal.OkHttpClient$Factory.&lt;init&gt;(OkHttpClient.java:123)
-	at org.openqa.selenium.remote.http.HttpClient$Factory.createDefault(HttpClient.java:59)
-	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;clinit&gt;(HttpCommandExecutor.java:47)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at HybridFramework.keywords.GenericKeywords.openBrowser(GenericKeywords.java:60)
-	... 30 more
-Caused by: java.lang.ClassNotFoundException: kotlin.TypeCastException
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-	... 41 more
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite_A-class-failed -->
           <div class="suite-Suite_A-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -198,19 +159,7 @@ Caused by: java.lang.ClassNotFoundException: kotlin.TypeCastException
                   <span class="parameters">({Username=U3, ExpectedResult=LoginFailure, Password=P3, Runmode=N, Browser=Edge})</span>
                   <div class="stack-trace">org.testng.SkipException: Runmode is set to: N
 	at HybridFramework.suites.LoginTest.loginTest(LoginTest.java:24)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome...)">
-                  </a> <!-- loginTest({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome...) -->
-                  <span class="method-name">loginTest</span>
-                  <span class="parameters">({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome})</span>
-                  <div class="stack-trace">org.testng.SkipException: Runmode is set to: N
-	at HybridFramework.suites.LoginTest.loginTest(LoginTest.java:24)
-... Removed 24 stack frames
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -222,7 +171,19 @@ Caused by: java.lang.ClassNotFoundException: kotlin.TypeCastException
                   <span class="parameters">({Username=example@mail.com, ExpectedResult=LoginSuccess, Password=Pass123, Runmode=N, Browser=Mozilla})</span>
                   <div class="stack-trace">org.testng.SkipException: Runmode is set to: N
 	at HybridFramework.suites.LoginTest.loginTest(LoginTest.java:24)
-... Removed 24 stack frames
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome...)">
+                  </a> <!-- loginTest({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome...) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode is set to: N
+	at HybridFramework.suites.LoginTest.loginTest(LoginTest.java:24)
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -242,12 +203,28 @@ Caused by: java.lang.ClassNotFoundException: kotlin.TypeCastException
                   <span class="parameters">({Username=example@mail.com, Runmode=N, Browser=Chrome})</span>
                   <div class="stack-trace">org.testng.SkipException: Runmode is set to: N
 	at HybridFramework.suites.Jobserve.JobserveTest(Jobserve.java:22)
-... Removed 24 stack frames
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite_A-class-skipped -->
+          <div class="suite-Suite_A-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">HybridFramework.suites.TestB</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testB({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla})">
+                  </a> <!-- testB({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla}) -->
+                  <span class="method-name">testB</span>
+                  <span class="parameters">({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_A-class-passed -->
         </div> <!-- panel Suite_A -->
         <div panel-name="suite-My_suite" class="panel My_suite">
         </div> <!-- panel My_suite -->
@@ -354,28 +331,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testB')
 data.setCell(0, 2, 'HybridFramework.suites.TestB')
-data.setCell(0, 3, 55);
+data.setCell(0, 3, 7462);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'HybridFramework.suites.LoginTest')
-data.setCell(1, 3, 3);
+data.setCell(1, 3, 13);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginTest')
 data.setCell(2, 2, 'HybridFramework.suites.LoginTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginTest')
 data.setCell(3, 2, 'HybridFramework.suites.LoginTest')
-data.setCell(3, 3, 1);
+data.setCell(3, 3, 2);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'JobserveTest')
 data.setCell(4, 2, 'HybridFramework.suites.Jobserve')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 1);
 window.suiteTableData['Suite_A']= { tableData: data, tableDiv: 'times-div-Suite_A'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 60 ms</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Suite_A">
               </div> <!-- times-div-Suite_A -->
             </div> <!-- times-div -->
@@ -446,79 +423,77 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">490 ms</span>
+                <span class="method-start">398 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest({Username=example@mail.com, ExpectedResult=LoginSuccess, Password=Pass123, Runmode=N, Browser=Mozill...)</span>
-                <span class="method-start">591 ms</span>
+                <span class="method-start">505 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">595 ms</span>
+                <span class="method-start">519 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">809 ms</span>
+                <span class="method-start">749 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome...)</span>
-                <span class="method-start">809 ms</span>
+                <span class="method-start">749 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">810 ms</span>
+                <span class="method-start">751 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">853 ms</span>
+                <span class="method-start">786 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest({Username=U3, ExpectedResult=LoginFailure, Password=P3, Runmode=N, Browser=Edge})</span>
-                <span class="method-start">853 ms</span>
+                <span class="method-start">786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">854 ms</span>
+                <span class="method-start">788 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">HybridFramework.suites.TestB</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">913 ms</span>
+                <span class="method-start">835 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">955 ms</span>
+                <span class="method-start">876 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testB({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla})</span>
-                <span class="method-start">955 ms</span>
+                <span class="method-start">876 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">1010 ms</span>
+                <span class="method-start">8340 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">HybridFramework.suites.Jobserve</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">1050 ms</span>
+                <span class="method-start">8401 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">1086 ms</span>
+                <span class="method-start">8435 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">JobserveTest({Username=example@mail.com, Runmode=N, Browser=Chrome})</span>
-                <span class="method-start">1087 ms</span>
+                <span class="method-start">8435 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">1087 ms</span>
+                <span class="method-start">8437 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -535,79 +510,77 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">490 ms</span>
+                <span class="method-start">398 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest({Username=example@mail.com, ExpectedResult=LoginSuccess, Password=Pass123, Runmode=N, Browser=Mozill...)</span>
-                <span class="method-start">591 ms</span>
+                <span class="method-start">505 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">595 ms</span>
+                <span class="method-start">519 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">809 ms</span>
+                <span class="method-start">749 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest({Username=example@mail.com, ExpectedResult=LoginFailure, Password=Pass123, Runmode=N, Browser=Chrome...)</span>
-                <span class="method-start">809 ms</span>
+                <span class="method-start">749 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">810 ms</span>
+                <span class="method-start">751 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">853 ms</span>
+                <span class="method-start">786 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest({Username=U3, ExpectedResult=LoginFailure, Password=P3, Runmode=N, Browser=Edge})</span>
-                <span class="method-start">853 ms</span>
+                <span class="method-start">786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">854 ms</span>
+                <span class="method-start">788 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">HybridFramework.suites.TestB</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">913 ms</span>
+                <span class="method-start">835 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">955 ms</span>
+                <span class="method-start">876 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testB({Username=fdsfsd, ExpectedResult=fsd, Password=fsdfsd, Runmode=Y, Browser=Mozilla})</span>
-                <span class="method-start">955 ms</span>
+                <span class="method-start">876 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">1010 ms</span>
+                <span class="method-start">8340 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">HybridFramework.suites.Jobserve</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">1050 ms</span>
+                <span class="method-start">8401 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">1086 ms</span>
+                <span class="method-start">8435 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">JobserveTest({Username=example@mail.com, Runmode=N, Browser=Chrome})</span>
-                <span class="method-start">1087 ms</span>
+                <span class="method-start">8435 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">1087 ms</span>
+                <span class="method-start">8437 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
