@@ -17,7 +17,7 @@
         <java jar="${ws.home}/lib/selenium-server.jar"/>
     </target-->
 	<path id="classpath_jars">
-	        	<fileset dir="F:\\.m2\repository\" includes="**/*.jar"/>
+	        	<fileset dir="C:\\.m2\repository\" includes="**/*.jar"/>
 	</path>
     <target name="setClassPath" unless="test.classpath">
         
