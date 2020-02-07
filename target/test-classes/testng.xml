@@ -1,5 +1,0 @@
-<suite name="My suite">
-	<suite-files>
-		<suite-file path = "./src/test/resources/suites.xml"/>
-	</suite-files>
-</suite>

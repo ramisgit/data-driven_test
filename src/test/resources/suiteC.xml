@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite C" >
+
+
+  
+  <test name="SuiteC">
+    <classes>
+        <class name="com.datafw.suitec.TestC" ></class>  
+    </classes>
+ </test>
+ 
+
+</suite>

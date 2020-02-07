@@ -2,13 +2,12 @@
 <!DOCTYPE project [
 ]>
 
-<project name="Hybrid" default="usage" basedir=".">  
+<project name="Data-Driven" default="usage" basedir=".">  
 
 <!-- ========== Initialize Properties =================================== -->
     <property environment="env"/>
     
     <property name="ws.home" value="${basedir}"/>
-	<!--property name="ws.jars" value="D:\Whizdom-Trainings\jars\newjars\"/-->
     <property name="test.dest" value="${ws.home}/build"/>
     <property name="test.src" value="${ws.home}/src"/>
 	<property name="ng.result" value="test-output"/>
@@ -17,7 +16,7 @@
         <java jar="${ws.home}/lib/selenium-server.jar"/>
     </target-->
 	<path id="classpath_jars">
-	        	<fileset dir="C:\\.m2\repository\" includes="**/*.jar"/>
+	        	<fileset dir="${ws.home}" includes="**/*.jar"/>
 	</path>
     <target name="setClassPath" unless="test.classpath">
         
@@ -103,10 +102,6 @@
 -->
     <!-- ****************** targets not used ****************** -->
 	<target name="email" >
-	       <java classname="HybridFramework.mail.ZipAndSendMail" classpath="${test.dest}" classpathref="classpath_jars" />
+	       <java classname="com.datafw.mail.ZipAndSendMail" classpath="${test.dest}" classpathref="classpath_jars" />
 	    </target>
-	<!--
-	<target name="run_parallel" >
-		       <java classname="com.qtpselenium.rediff.hybrid.base.ParallelExec" classpath="${test.dest}" classpathref="classpath_jars" />
-		    </target> -->
 </project>
