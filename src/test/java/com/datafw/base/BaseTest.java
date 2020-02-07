@@ -49,7 +49,7 @@ public class BaseTest {
 	}
 	@BeforeMethod
 	public void initTest() {
-		rep = ExtentManager.getInstance(prop.getProperty("reportPath"));
+		rep = ExtentManager.getInstance(System.getProperty("user.dir") + "\\sheets\\test-output\\");
 		test = rep.createTest(testName);
 		ds.setExtentTest(test);
 	}

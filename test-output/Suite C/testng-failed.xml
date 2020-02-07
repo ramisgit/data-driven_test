@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite C]">
+  <test name="SuiteC(failed)">
+    <classes>
+      <class name="com.datafw.suitec.TestC">
+        <methods>
+          <include name="quit"/>
+          <include name="JobserveTest" invocation-numbers="0"/>
+          <include name="init"/>
+          <include name="initTest"/>
+        </methods>
+      </class> <!-- com.datafw.suitec.TestC -->
+    </classes>
+  </test> <!-- SuiteC(failed) -->
+</suite> <!-- Failed suite [Suite C] -->

@@ -1,207 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="1" total="6" passed="0">
+<testng-results skipped="2" failed="1" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite B" duration-ms="162" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
+  <suite name="Suite A" duration-ms="75921" started-at="2020-02-07T04:01:23Z" finished-at="2020-02-07T04:02:39Z">
     <groups>
     </groups>
-    <test name="SuiteB" duration-ms="162" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-      <class name="com.datafw.suiteb.TestB">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.datafw.suiteb.TestB@4cf777e8]" name="init" is-config="true" duration-ms="51" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.datafw.suiteb.TestB@4cf777e8]" name="initTest" is-config="true" duration-ms="0" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initTest -->
-        <test-method status="SKIP" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:com.datafw.suiteb.TestB@4cf777e8]" name="JobserveTest" duration-ms="2" started-at="2020-02-07T03:52:36Z" data-provider="getData" finished-at="2020-02-07T03:52:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Col2=Dummy2, Col1=Dummy1, Runmode=Y}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Runmode is set to: N]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Runmode is set to: N
-	at com.datafw.suiteb.TestB.JobserveTest(TestB.java:20)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JobserveTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.datafw.suiteb.TestB@4cf777e8]" name="quit" is-config="true" duration-ms="53" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-        <test-method status="SKIP" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:com.datafw.suiteb.TestB@4cf777e8]" name="JobserveTest" duration-ms="2" started-at="2020-02-07T03:52:36Z" data-provider="getData" finished-at="2020-02-07T03:52:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Col2=Dummy4, Col1=Dummy3, Runmode=N}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Runmode is set to: N]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Runmode is set to: N
-	at com.datafw.suiteb.TestB.JobserveTest(TestB.java:20)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JobserveTest -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.datafw.suiteb.TestB@4cf777e8]" name="initTest" is-config="true" duration-ms="0" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.datafw.suiteb.TestB@4cf777e8]" name="quit" is-config="true" duration-ms="48" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- com.datafw.suiteb.TestB -->
-    </test> <!-- SuiteB -->
-  </suite> <!-- Suite B -->
-  <suite name="Suite C" duration-ms="78" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-    <groups>
-    </groups>
-    <test name="SuiteC" duration-ms="78" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-      <class name="com.datafw.suitec.TestC">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.datafw.suitec.TestC@e45f292]" name="init" is-config="true" duration-ms="31" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:com.datafw.suitec.TestC@e45f292]" name="JobserveTest" duration-ms="2" started-at="2020-02-07T03:52:36Z" data-provider="getData" finished-at="2020-02-07T03:52:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Col3=Dummy3, Col2=Dummy2, Col1=Dummy1, Runmode=Y}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Runmode is set to: N]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Runmode is set to: N
-	at com.datafw.suitec.TestC.JobserveTest(TestC.java:20)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JobserveTest -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.datafw.suitec.TestC@e45f292]" name="initTest" is-config="true" duration-ms="0" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.datafw.suitec.TestC@e45f292]" name="quit" is-config="true" duration-ms="41" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- com.datafw.suitec.TestC -->
-    </test> <!-- SuiteC -->
-  </suite> <!-- Suite C -->
-  <suite name="Suite A" duration-ms="76030" started-at="2020-02-07T03:51:20Z" finished-at="2020-02-07T03:52:36Z">
-    <groups>
-    </groups>
-    <test name="SuiteA" duration-ms="76030" started-at="2020-02-07T03:51:20Z" finished-at="2020-02-07T03:52:36Z">
+    <test name="SuiteA" duration-ms="75921" started-at="2020-02-07T04:01:23Z" finished-at="2020-02-07T04:02:39Z">
       <class name="com.datafw.suitea.TestA">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.datafw.suitea.TestA@685cb137]" name="init" is-config="true" duration-ms="517" started-at="2020-02-07T03:51:20Z" finished-at="2020-02-07T03:51:20Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.datafw.suitea.TestA@5c3bd550]" name="init" is-config="true" duration-ms="536" started-at="2020-02-07T04:01:23Z" finished-at="2020-02-07T04:01:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.datafw.suitea.TestA@685cb137]" name="initTest" is-config="true" duration-ms="145" started-at="2020-02-07T03:51:20Z" finished-at="2020-02-07T03:51:21Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.datafw.suitea.TestA@5c3bd550]" name="initTest" is-config="true" duration-ms="154" started-at="2020-02-07T04:01:23Z" finished-at="2020-02-07T04:01:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="FAIL" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:com.datafw.suitea.TestA@685cb137]" name="JobserveTest" duration-ms="74984" started-at="2020-02-07T03:51:21Z" data-provider="getData" finished-at="2020-02-07T03:52:35Z">
+        <test-method status="FAIL" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:com.datafw.suitea.TestA@5c3bd550]" name="JobserveTest" duration-ms="74841" started-at="2020-02-07T04:01:23Z" data-provider="getData" finished-at="2020-02-07T04:02:38Z">
           <params>
             <param index="0">
               <value>
@@ -237,7 +51,6 @@
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
 	at org.testng.TestNG.run(TestNG.java:1018)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
@@ -281,22 +94,22 @@ _onJSONObjectReady/<@chrome://marionette/content/transport.js:501:20
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
 	at com.datafw.keywords.GenericKeywords.openBrowser(GenericKeywords.java:55)
-	... 31 more
+	... 30 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.reflect.InvocationTargetException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JobserveTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.datafw.suitea.TestA@685cb137]" name="quit" is-config="true" duration-ms="255" started-at="2020-02-07T03:52:35Z" finished-at="2020-02-07T03:52:36Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.datafw.suitea.TestA@5c3bd550]" name="quit" is-config="true" duration-ms="262" started-at="2020-02-07T04:02:38Z" finished-at="2020-02-07T04:02:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.datafw.suitea.TestA@685cb137]" name="initTest" is-config="true" duration-ms="0" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.datafw.suitea.TestA@5c3bd550]" name="initTest" is-config="true" duration-ms="0" started-at="2020-02-07T04:02:38Z" finished-at="2020-02-07T04:02:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="SKIP" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:com.datafw.suitea.TestA@685cb137]" name="JobserveTest" duration-ms="3" started-at="2020-02-07T03:52:36Z" data-provider="getData" finished-at="2020-02-07T03:52:36Z">
+        <test-method status="SKIP" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:com.datafw.suitea.TestA@5c3bd550]" name="JobserveTest" duration-ms="3" started-at="2020-02-07T04:02:38Z" data-provider="getData" finished-at="2020-02-07T04:02:38Z">
           <params>
             <param index="0">
               <value>
@@ -330,7 +143,6 @@ _onJSONObjectReady/<@chrome://marionette/content/transport.js:501:20
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
 	at org.testng.TestNG.run(TestNG.java:1018)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
@@ -342,15 +154,15 @@ _onJSONObjectReady/<@chrome://marionette/content/transport.js:501:20
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JobserveTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.datafw.suitea.TestA@685cb137]" name="quit" is-config="true" duration-ms="55" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.datafw.suitea.TestA@5c3bd550]" name="quit" is-config="true" duration-ms="53" started-at="2020-02-07T04:02:38Z" finished-at="2020-02-07T04:02:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.datafw.suitea.TestA@685cb137]" name="initTest" is-config="true" duration-ms="1" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.datafw.suitea.TestA@5c3bd550]" name="initTest" is-config="true" duration-ms="0" started-at="2020-02-07T04:02:38Z" finished-at="2020-02-07T04:02:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="SKIP" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:com.datafw.suitea.TestA@685cb137]" name="JobserveTest" duration-ms="1" started-at="2020-02-07T03:52:36Z" data-provider="getData" finished-at="2020-02-07T03:52:36Z">
+        <test-method status="SKIP" signature="JobserveTest(java.util.Hashtable)[pri:0, instance:com.datafw.suitea.TestA@5c3bd550]" name="JobserveTest" duration-ms="2" started-at="2020-02-07T04:02:38Z" data-provider="getData" finished-at="2020-02-07T04:02:38Z">
           <params>
             <param index="0">
               <value>
@@ -384,7 +196,6 @@ _onJSONObjectReady/<@chrome://marionette/content/transport.js:501:20
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
 	at org.testng.TestNG.run(TestNG.java:1018)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
@@ -396,15 +207,11 @@ _onJSONObjectReady/<@chrome://marionette/content/transport.js:501:20
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JobserveTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.datafw.suitea.TestA@685cb137]" name="quit" is-config="true" duration-ms="41" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.datafw.suitea.TestA@5c3bd550]" name="quit" is-config="true" duration-ms="43" started-at="2020-02-07T04:02:38Z" finished-at="2020-02-07T04:02:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.datafw.suitea.TestA -->
     </test> <!-- SuiteA -->
   </suite> <!-- Suite A -->
-  <suite name="My suite" duration-ms="0" started-at="2020-02-07T03:52:36Z" finished-at="2020-02-07T03:52:36Z">
-    <groups>
-    </groups>
-  </suite> <!-- My suite -->
 </testng-results>
