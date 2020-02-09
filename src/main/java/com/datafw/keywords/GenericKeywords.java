@@ -48,7 +48,7 @@ public class GenericKeywords {
 		System.out.println(dataKey);
 		test.log(Status.INFO, "Opening browser " + bType);
 		if (bType.equals("Mozilla")) {
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "null");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "log.txt");
 			System.out.println(System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
 			//invoke profile
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
@@ -57,7 +57,8 @@ public class GenericKeywords {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}else if(bType.equals("IE")) {
-			driver = new InternetExplorerDriver();
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\drivers\\internetexplorerdriver.exe");
+			driver = new InternetExplorerDriver(); //IE driver requires adding the .exe to system path
 		}else if (bType.equals("Edge")) {
 			driver = new EdgeDriver();
 		} else {

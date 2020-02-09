@@ -27,25 +27,25 @@ public class BaseTest {
 	@BeforeTest
 	public void init() throws IOException {
 		testName = this.getClass().getSimpleName();
-		System.out.println("test name = " + testName + " -- delete this");
 		String arr[] = this.getClass().getPackage().getName().split("\\.");
 		suiteName = arr[arr.length-1];
-		
-		prop = new Properties();
-		envProp = new Properties();
-		FileInputStream fs = new FileInputStream(System.getProperty("user.dir") + "//sheets//test-data//env.properties");
-		prop.load(fs);
-		String env = prop.getProperty("env");
-		fs = new FileInputStream(System.getProperty("user.dir") + "//sheets//test-data//" + env + ".properties");
-		envProp.load(fs);
 		System.out.println("Suite name is " + suiteName);
-		xls = new Xls_Reader(System.getProperty("user.dir") + "//" + envProp.getProperty(suiteName+"_xls"));
-		
-		//init
-		ds = new DriverScript();
-		ds.setEnvProp(envProp);
-		ds.setProp(prop);
-		
+		if (!suiteName.equals("base")) {
+			prop = new Properties();
+			envProp = new Properties();
+			FileInputStream fs = new FileInputStream(System.getProperty("user.dir") + "//sheets//test-data//env.properties");
+			prop.load(fs);
+			String env = prop.getProperty("env");
+			fs = new FileInputStream(System.getProperty("user.dir") + "//sheets//test-data//" + env + ".properties");
+			envProp.load(fs);
+			
+			xls = new Xls_Reader(System.getProperty("user.dir") + "//" + envProp.getProperty(suiteName+"_xls"));
+			
+			//init
+			ds = new DriverScript();
+			ds.setEnvProp(envProp);
+			ds.setProp(prop);
+		}
 	}
 	@BeforeMethod
 	public void initTest() {

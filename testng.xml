@@ -1,8 +1,0 @@
-<suite name="My suite" >
- <suite-files>
-   <suite-file path="./src/test/resources/suiteA.xml" />
-   <suite-file path="./src/test/resources/suiteB.xml" />
-   <suite-file path="./src/test/resources/suiteC.xml" />
-  </suite-files>
-
-</suite>

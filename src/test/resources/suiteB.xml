@@ -5,7 +5,9 @@
   
   <test name="SuiteB">
     <classes>
-        <class name="com.datafw.suiteb.TestB" ></class>  
+        <class name="com.datafw.suiteb.TestD" ></class>  
+        <class name="com.datafw.suiteb.TestE" ></class>  
+        <class name="com.datafw.suiteb.TestF" ></class>  
     </classes>
  </test>
  
